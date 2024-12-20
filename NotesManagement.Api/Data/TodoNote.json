@@ -1,0 +1,56 @@
+[
+  {
+    "DueDate": "2024-12-27T00:00:00",
+    "IsComplete": false,
+    "Content": "B",
+    "Id": "68fe2f1c-0344-4439-8f06-d3eeb6913c62",
+    "UserId": 1,
+    "CreatedAt": "2024-12-20T06:40:59.2614011Z",
+    "UpdatedAt": "2024-12-20T06:46:13.9685988Z"
+  },
+  {
+    "DueDate": "2024-12-20T00:00:00",
+    "IsComplete": false,
+    "Content": "A",
+    "Id": "8f27af94-6673-40aa-90cc-b2fa2d682da1",
+    "UserId": 1,
+    "CreatedAt": "2024-12-20T06:40:10.3847082Z",
+    "UpdatedAt": "2024-12-20T06:46:18.9459736Z"
+  },
+  {
+    "DueDate": "2025-01-02T00:00:00",
+    "IsComplete": true,
+    "Content": "AS",
+    "Id": "c86e909b-1960-4517-a90f-259165452b8b",
+    "UserId": 1,
+    "CreatedAt": "2024-12-20T07:01:25.9801132Z",
+    "UpdatedAt": "2024-12-20T07:11:19.6202393Z"
+  },
+  {
+    "DueDate": "2024-12-19T00:00:00",
+    "IsComplete": false,
+    "Content": "F",
+    "Id": "d6b7ab26-0f8a-4aa4-aa8a-753c236f1d24",
+    "UserId": 1,
+    "CreatedAt": "2024-12-20T06:59:18.2545556Z",
+    "UpdatedAt": "2024-12-20T07:11:21.7253186Z"
+  },
+  {
+    "DueDate": "2024-12-20T00:00:00",
+    "IsComplete": false,
+    "Content": "GG",
+    "Id": "93ceb256-76a8-46c3-b18b-a7aac1598671",
+    "UserId": 1,
+    "CreatedAt": "2024-12-20T07:56:34.2817735Z",
+    "UpdatedAt": null
+  },
+  {
+    "DueDate": "2024-12-20T00:00:00",
+    "IsComplete": true,
+    "Content": "C",
+    "Id": "988fab55-cd54-4cf4-94d3-1a6ec7bd5b59",
+    "UserId": 4,
+    "CreatedAt": "2024-12-20T08:07:15.268845Z",
+    "UpdatedAt": "2024-12-20T08:07:20.8644575Z"
+  }
+]

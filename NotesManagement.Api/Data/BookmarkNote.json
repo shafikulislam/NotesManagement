@@ -1,0 +1,18 @@
+[
+  {
+    "Url": "http://localhost:4200/notes/create?type=bookmark",
+    "Content": "",
+    "Id": "79232d9a-6fe5-42e3-9ea4-97d8688214e9",
+    "UserId": 1,
+    "CreatedAt": "2024-12-20T06:41:10.3543304Z",
+    "UpdatedAt": "2024-12-20T07:11:16.6302744Z"
+  },
+  {
+    "Url": "http://localhost:4200/notes/create?type=bookmark",
+    "Content": "",
+    "Id": "f99323a1-ac82-4b3f-9b86-0dbe1392cfea",
+    "UserId": 4,
+    "CreatedAt": "2024-12-20T08:07:30.7322812Z",
+    "UpdatedAt": null
+  }
+]

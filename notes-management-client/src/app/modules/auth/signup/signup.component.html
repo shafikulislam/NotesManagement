@@ -1,0 +1,42 @@
+<div class="signup-container">
+    <h2>Signup</h2>
+
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" formControlName="name" placeholder="Enter your name">
+            <div *ngIf="signupForm.get('name')?.invalid && signupForm.get('name')?.touched">
+                <small *ngIf="signupForm.get('name')?.errors?.['required']">Name is required.</small>
+                <small *ngIf="signupForm.get('name')?.errors?.['name']">Enter a valid name.</small>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter your email">
+            <div *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched">
+                <small *ngIf="signupForm.get('email')?.errors?.['required']">Email is required.</small>
+                <small *ngIf="signupForm.get('email')?.errors?.['email']">Enter a valid email.</small>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="dateOfBirth" class="form-label">Date of Birth</label>
+            <input type="date" class="form-control" id="dateOfBirth" formControlName="dateOfBirth">
+            <div *ngIf="signupForm.get('dateOfBirth')?.invalid && signupForm.get('dateOfBirth')?.touched">
+                <small *ngIf="signupForm.get('dateOfBirth')?.errors?.['required']">DOB is required.</small>
+                <small *ngIf="signupForm.get('dateOfBirth')?.errors?.['dateOfBirth']">Enter a valid DOB.</small>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" formControlName="password"
+                placeholder="Enter your password">
+            <div *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched">
+                <small *ngIf="signupForm.get('password')?.errors?.['required']">Password is required.</small>
+                <small *ngIf="signupForm.get('password')?.errors?.['minlength']">Password must be at least 6
+                    characters.</small>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Signup</button>
+    </form>
+    <p>Already have an account? <a routerLink="/auth/login">Login here</a></p>
+</div>

@@ -1,0 +1,111 @@
+<div class="container mt-4">
+    <!-- Regular Notes Section -->
+    <div class="mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <h3>Regular Notes</h3>
+            <button class="btn btn-primary" (click)="createNewNote('regular')">Create New</button>
+        </div>
+        <div class="row">
+            <div class="col-3 mb-2" *ngFor="let note of regularNotes">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">{{ note.title }}</h5> -->
+                        <p class="card-text">{{ note.content }}</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-sm btn-warning" (click)="editNote('regular', note.id)">
+                                <i class="bi bi-pencil-square"></i> Edit
+                            </button>
+                            <button class="btn btn-sm btn-danger" (click)="deleteNote('regular', note.id)">
+                                <i class="bi bi-trash"></i> Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Repeat Similar Blocks for Reminder, Todo, and Bookmark Notes -->
+
+    <!-- Reminder Notes Section -->
+    <div class="mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <h3>Reminders</h3>
+            <button class="btn btn-primary" (click)="createNewNote('reminder')">Create New</button>
+        </div>
+        <div class="row">
+            <div class="col-3 mb-2" *ngFor="let note of reminderNotes">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">{{ note.title }}</h5> -->
+                        <p class="card-text">{{ note.content }}</p>
+                        <p class="card-text">Reminder: {{ note.reminderDate | date }}</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-sm btn-warning" (click)="editNote('reminder', note.id)">
+                                <i class="bi bi-pencil-square"></i> Edit
+                            </button>
+                            <button class="btn btn-sm btn-danger" (click)="deleteNote('reminder', note.id)">
+                                <i class="bi bi-trash"></i> Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Todo Notes Section -->
+    <div class="mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <h3>Todos</h3>
+            <button class="btn btn-primary" (click)="createNewNote('todo')">Create New</button>
+        </div>
+        <div class="row">
+            <div class="col-3 mb-2" *ngFor="let note of todoNotes">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">{{ note.title }}</h5> -->
+                        <p class="card-text">{{ note.content }}</p>
+                        <p class="card-text">Due Date: {{ note.dueDate | date }}</p>
+                        <p class="card-text">Status: {{ note.isComplete }}</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-sm btn-warning" (click)="editNote('todo', note.id)">
+                                <i class="bi bi-pencil-square"></i> Edit
+                            </button>
+                            <button class="btn btn-sm btn-danger" (click)="deleteNote('todo', note.id)">
+                                <i class="bi bi-trash"></i> Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bookmark Notes Section -->
+    <div class="mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <h3>Bookmarks</h3>
+            <button class="btn btn-primary" (click)="createNewNote('bookmark')">Create New</button>
+        </div>
+        <div class="row">
+            <div class="col-3 mb-2" *ngFor="let note of bookmarkNotes">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">{{ note.title }}</h5> -->
+                        <p class="card-text">{{ note.content }}</p>
+                        <p class="card-text">URL: <a [href]="note.url" target="_blank">{{ note.url }}</a></p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-sm btn-warning" (click)="editNote('bookmark', note.id)">
+                                <i class="bi bi-pencil-square"></i> Edit
+                            </button>
+                            <button class="btn btn-sm btn-danger" (click)="deleteNote('bookmark', note.id)">
+                                <i class="bi bi-trash"></i> Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

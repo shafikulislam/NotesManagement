@@ -1,0 +1,26 @@
+[
+  {
+    "ReminderDate": "2024-12-20T00:00:00",
+    "Content": "A",
+    "Id": "cbdd5f99-6f58-4473-908c-6a81649b0f00",
+    "UserId": 1,
+    "CreatedAt": "2024-12-20T06:35:01.3595611Z",
+    "UpdatedAt": null
+  },
+  {
+    "ReminderDate": "2025-01-03T00:00:00",
+    "Content": "B",
+    "Id": "648786a2-2ce3-466d-bab4-4cfc43caf9fd",
+    "UserId": 1,
+    "CreatedAt": "2024-12-20T06:38:19.2021191Z",
+    "UpdatedAt": "2024-12-20T06:48:28.9413427Z"
+  },
+  {
+    "ReminderDate": "2024-12-20T00:00:00",
+    "Content": "B",
+    "Id": "1dd9f4d6-ada0-43cd-a912-253f0ce54016",
+    "UserId": 4,
+    "CreatedAt": "2024-12-20T08:07:06.9700111Z",
+    "UpdatedAt": null
+  }
+]

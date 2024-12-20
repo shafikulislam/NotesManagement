@@ -1,0 +1,42 @@
+<div class="container note-form-container">
+    <h2>{{ isEditMode ? 'Edit' : 'Create' }} {{ noteType | titlecase }} Note</h2>
+    <form [formGroup]="noteForm" (ngSubmit)="onSubmit()">
+        <!-- <div class="form-group">
+            <label for="title">Title</label>
+            <input id="title" formControlName="title" type="text" class="form-control" required />
+        </div> -->
+
+        <div *ngIf="noteType === 'regular' || noteType === 'reminder' || noteType === 'todo'" class="form-group">
+            <label for="content">Content</label>
+            <textarea id="content" formControlName="content" class="form-control"></textarea>
+        </div>
+
+        <div *ngIf="noteType === 'reminder'" class="form-group">
+            <label for="reminderDate">Reminder Date</label>
+            <input id="reminderDate" formControlName="reminderDate" type="date" class="form-control" />
+        </div>
+
+        <div *ngIf="noteType === 'todo'" class="form-group">
+            <label for="dueDate">Due Date</label>
+            <input id="dueDate" formControlName="dueDate" type="date" class="form-control" />
+        </div>
+
+        <div *ngIf="noteType === 'todo'" class="form-group">
+            <label for="isComplete">Is Completed</label>
+            <input id="isComplete" formControlName="isComplete" type="checkbox" class="form-check-input" />
+        </div>
+
+        <div *ngIf="noteType === 'bookmark'" class="form-group">
+            <label for="url">URL</label>
+            <input id="url" formControlName="url" type="url" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" [disabled]="noteForm.invalid">
+                {{ isEditMode ? 'Update' : 'Create' }}
+            </button>
+            <button type="button" class="btn btn-secondary" (click)="cancelCreate()">Cancel</button>
+        </div>
+
+    </form>
+</div>

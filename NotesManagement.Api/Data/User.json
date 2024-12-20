@@ -1,0 +1,34 @@
+[
+  {
+    "Id": 1,
+    "Name": "string",
+    "Email": "user@example.com",
+    "UserId": "user@example.com",
+    "DateOfBirth": "2024-12-18T00:00:00",
+    "HashedPassword": "$2a$11$LOzYZbAymsPbzPNTY5qrkOuMbnLol2CZP/eKeVOE40OOieRcMPmF6"
+  },
+  {
+    "Id": 2,
+    "Name": "string",
+    "Email": "user1@example.com",
+    "UserId": "user1@example.com",
+    "DateOfBirth": "2024-12-18T00:00:00",
+    "HashedPassword": "$2a$11$sH.JqA/KQ71ndeV3.paQCu21bDQ9miZ5Ox30C.qJBmFsg66Dp/fTm"
+  },
+  {
+    "Id": 3,
+    "Name": "Shafikul Islam",
+    "Email": "user3@example.com",
+    "UserId": "user3@example.com",
+    "DateOfBirth": "2024-12-20T00:00:00",
+    "HashedPassword": "$2a$11$lCrQ21tTH9J9lUPUtAbMdeL.3qqNlUMwHu24GKyGsF9DjkbEO5YWa"
+  },
+  {
+    "Id": 4,
+    "Name": "Shafikul Islam",
+    "Email": "user4@example.com",
+    "UserId": "user4@example.com",
+    "DateOfBirth": "2024-12-20T00:00:00",
+    "HashedPassword": "$2a$11$RpEwv54HckcO7t8EjvZNcOevnJARkLsrb2YUhU1U8PBCh2PHw6D4u"
+  }
+]
